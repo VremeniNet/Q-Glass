@@ -1,0 +1,23 @@
+.composition
+	position: relative
+
+	&__photo
+		width: 60%
+		box-shadow: $box-shadow
+		border-radius: .5rem
+		position: absolute
+		transition: all .4s
+		&_n1
+			top: 0rem
+			left: 0rem
+		&_n2
+			top: 5.5rem
+			right: -2rem
+		&_n3
+			left: 7rem
+			top: 20rem
+		&:hover
+			transform: scale(1.2)
+			z-index: 20
+	&:hover &__photo:not(:hover)
+		transform: scale(0.95)
