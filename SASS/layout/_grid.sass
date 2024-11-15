@@ -48,5 +48,8 @@
 		width: 100%
 
 [class^="col-1-of-4"]
+	@include respond(tab-port)
+		width: 50%
+
 	@include respond(phone)
 		width: 50%
