@@ -5,6 +5,10 @@
 
 html
 	font-size: 62.5%
+	@include respond(tab-port)
+		font-size: 35%
+	@include respond(phone)
+		font-size: 20%
 
 body
 	background-color: $color-light-blue

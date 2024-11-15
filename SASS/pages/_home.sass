@@ -1,6 +1,10 @@
 .section-about
 	padding-top: 8rem
 	margin-bottom: 15rem
+	@include respond(tab-port)
+		padding: 3rem
+	@include respond(phone)
+		padding: 7rem
 
 .list-services
 	margin-top: 10rem
