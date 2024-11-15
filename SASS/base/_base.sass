@@ -4,7 +4,10 @@
 	box-sizing: border-box
 
 html
+	overflow-x: hidden
 	font-size: 62.5%
+	@include respond(tab-land)
+		font-size: 35%
 	@include respond(tab-port)
 		font-size: 35%
 	@include respond(phone)
@@ -13,7 +16,6 @@ html
 body
 	background-color: $color-light-blue
 	padding: 5rem
-	overflow-x: hidden
 
 .container
 	background-color: $color-white
