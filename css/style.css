@@ -141,6 +141,11 @@ body {
 		height: 75vh;
 	}
 }
+@media only screen and (max-width: 415px) {
+	.header {
+		height: 85vh;
+	}
+}
 .header__logo {
 	height: 9rem;
 	width: 9rem;
