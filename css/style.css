@@ -29,6 +29,11 @@ body {
 	background-color: #e7f6ff;
 	padding: 5rem;
 }
+@media only screen and (max-width: 600px) {
+	body {
+		padding: 3rem;
+	}
+}
 .container {
 	background-color: #fcfcfc;
 	position: relative;
@@ -568,7 +573,7 @@ body {
 @media only screen and (max-width: 415px) {
 	.section-about {
 		height: 65vh;
-		width: 80%;
+		width: 85%;
 	}
 }
 .list-services {
