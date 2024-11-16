@@ -529,7 +529,7 @@ body {
 @media only screen and (max-width: 600px) {
 	.section-about {
 		padding: 7rem;
-		height: 55vh;
+		height: 35vh;
 	}
 }
 .list-services {
