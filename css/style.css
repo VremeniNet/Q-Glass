@@ -568,6 +568,7 @@ body {
 @media only screen and (max-width: 415px) {
 	.section-about {
 		height: 65vh;
+		width: 90%;
 	}
 }
 .list-services {
