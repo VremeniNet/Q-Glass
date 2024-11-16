@@ -260,6 +260,7 @@ body {
 }
 .btn__1 {
 	margin-right: 4rem;
+	margin-bottom: 2rem;
 }
 .btn,
 .btn:link,
@@ -339,17 +340,12 @@ body {
 }
 @media only screen and (max-width: 600px) {
 	.composition__photo {
-		width: 50%;
+		width: 50px;
 	}
 }
 .composition__photo_n1 {
 	top: 0rem;
 	left: 0rem;
-}
-@media only screen and (max-width: 600px) {
-	.composition__photo_n1 {
-		left: 1vw;
-	}
 }
 .composition__photo_n2 {
 	top: 5.5rem;
@@ -357,8 +353,8 @@ body {
 }
 @media only screen and (max-width: 600px) {
 	.composition__photo_n2 {
-		top: 5vh;
-		right: 7vw;
+		top: 15px;
+		left: 35px;
 	}
 }
 .composition__photo_n3 {
@@ -367,8 +363,8 @@ body {
 }
 @media only screen and (max-width: 600px) {
 	.composition__photo_n3 {
-		left: 12vw;
-		top: 13vh;
+		left: 20px;
+		top: 35px;
 	}
 }
 .composition__photo:hover {
@@ -462,6 +458,8 @@ body {
 	height: auto;
 	max-width: 25vw;
 	min-width: 25vw;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	margin-left: 7vw;
 	background: #fcfcfc;
 	border-radius: 0.8rem;

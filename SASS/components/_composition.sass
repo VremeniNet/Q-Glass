@@ -10,7 +10,7 @@
 	&__photo
 		width: 60%
 		@include respond(phone)
-			width: 50%
+			width: 50px
 
 		box-shadow: $box-shadow
 		border-radius: .5rem
@@ -19,22 +19,21 @@
 		&_n1
 			top: 0rem
 			left: 0rem
-			@include respond(phone)
-				left: 1vw
+
 		&_n2
 			top: 5.5rem
 			right: -2rem
 			@include respond(phone)
-				top: 5vh
+				top: 15px
 
-				right: 7vw
+				left: 35px
 
 		&_n3
 			left: 7rem
 			top: 20rem
 			@include respond(phone)
-				left: 12vw
-				top: 13vh
+				left: 20px
+				top: 35px
 
 		&:hover
 			-webkit-transform: scale(1.2)
