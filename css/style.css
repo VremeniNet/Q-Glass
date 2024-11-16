@@ -340,7 +340,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
 	.composition__photo {
-		width: 50px;
+		width: 65px;
 	}
 }
 .composition__photo_n1 {
@@ -364,7 +364,7 @@ body {
 @media only screen and (max-width: 600px) {
 	.composition__photo_n3 {
 		left: 20px;
-		top: 35px;
+		top: 45px;
 	}
 }
 .composition__photo:hover {
