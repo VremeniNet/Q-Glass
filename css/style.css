@@ -188,11 +188,6 @@ body {
 		max-width: 80%;
 	}
 }
-@media only screen and (max-width: 600px) {
-	.row {
-		max-width: 100%;
-	}
-}
 .col-1-of-2 {
 	width: calc((100% - 6rem) / 2);
 }
@@ -348,7 +343,7 @@ body {
 		width: 65px;
 	}
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 415px) {
 	.composition__photo {
 		width: 60%;
 	}
@@ -480,7 +475,7 @@ body {
 		max-width: 150px;
 	}
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 415px) {
 	.list {
 		max-width: 70vw;
 	}
@@ -543,8 +538,9 @@ body {
 }
 @media only screen and (max-width: 600px) {
 	.section-about {
-		padding: 7rem;
+		padding: 2rem;
 		height: 35vh;
+		width: 90vw;
 	}
 }
 .list-services {
