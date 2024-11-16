@@ -188,6 +188,11 @@ body {
 		max-width: 80%;
 	}
 }
+@media only screen and (max-width: 600px) {
+	.row {
+		max-width: 100%;
+	}
+}
 .col-1-of-2 {
 	width: calc((100% - 6rem) / 2);
 }
@@ -343,6 +348,11 @@ body {
 		width: 65px;
 	}
 }
+@media only screen and (max-width: 300px) {
+	.composition__photo {
+		width: 60%;
+	}
+}
 .composition__photo_n1 {
 	top: 0rem;
 	left: 0rem;
@@ -468,6 +478,11 @@ body {
 @media only screen and (max-width: 600px) {
 	.list {
 		max-width: 150px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.list {
+		max-width: 70vw;
 	}
 }
 .list__title {
