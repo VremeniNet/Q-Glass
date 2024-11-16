@@ -1,5 +1,6 @@
 .composition
 	position: relative
+
 	@include respond(tab-port)
 		margin-bottom: 35rem
 
@@ -9,7 +10,7 @@
 	&__photo
 		width: 60%
 		@include respond(phone)
-			width: 40%
+			width: 50%
 
 		box-shadow: $box-shadow
 		border-radius: .5rem
@@ -19,18 +20,22 @@
 			top: 0rem
 			left: 0rem
 			@include respond(phone)
-				left: 7rem
+				left: 1vw
 		&_n2
 			top: 5.5rem
 			right: -2rem
 			@include respond(phone)
-				right: 7rem
+				top: 5vh
+
+				right: 7vw
 
 		&_n3
 			left: 7rem
 			top: 20rem
 			@include respond(phone)
-				left: 14rem
+				left: 12vw
+				top: 13vh
+
 		&:hover
 			-webkit-transform: scale(1.2)
 			z-index: 20

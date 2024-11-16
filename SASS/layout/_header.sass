@@ -1,10 +1,10 @@
 .header
 	position: relative
-	height: 85vh
+	height: 100vh
 	@include respond(tab-land)
 		height: 100vh
 	@include respond(phone)
-		height: 85vh
+		height: 75vh
 
 	background: url(../img/header.jpg) center / cover no-repeat
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
@@ -17,6 +17,8 @@
 		top: 5rem
 	&__box
 		position: absolute
-		top: 30%
-		left: 20%
+		top: 30vh
+		left: 10vw
 		text-align: left
+		@include respond(phone)
+			top: 20vh
