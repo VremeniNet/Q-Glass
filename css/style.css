@@ -569,7 +569,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
 	.section-book {
-		width: 100%;
+		width: 100vw;
 	}
 }
 @media only screen and (max-width: 415px) {
@@ -577,7 +577,7 @@ body {
 .book {
 	height: auto;
 	background: #062a42;
-	padding: 5rem 8rem;
+	padding: 5vh 8vw;
 	border-radius: 10px;
 }
 @media only screen and (max-width: 600px) {
@@ -588,6 +588,7 @@ body {
 .form {
 	height: auto;
 }
+
 .form__group {
 	margin-bottom: 3rem;
 	text-align: center;
@@ -605,6 +606,12 @@ body {
 	padding: 2rem 0rem 2rem 2rem;
 	background: #fcfcfc;
 	border-radius: 8px;
+	width: 100%;
+}
+@media only screen and (max-width: 600px) {
+	.form-input {
+		font-size: 1.8rem;
+	}
 }
 
 .section-about {
