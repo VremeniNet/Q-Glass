@@ -130,6 +130,15 @@ body {
 	line-height: 140%;
 	font-weight: 400;
 }
+
+.footer_paragraph {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 140%;
+	font-weight: 400;
+	color: #fcfcfc;
+}
+
 @media only screen and (max-width: 1240px) {
 	.paragraph {
 		font-size: 1.5rem;
@@ -283,6 +292,7 @@ body {
 .footer__title {
 	font-size: 2rem;
 	color: #fcfcfc;
+	margin-bottom: 2rem;
 }
 .btn__1 {
 	margin-right: 4rem;
