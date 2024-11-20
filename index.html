@@ -45,8 +45,8 @@
 							<span class="title-info__block__3">Пн-Вс, с 10:00 до 19:00</span>
 						</div>
 					</span>
-					<a href="#" class="btn btn__1">Наш каталог</a>
-					<a href="#" class="btn btn__2">Услуги</a>
+					<a href="#section-adventure" class="btn btn__1">Наш каталог</a>
+					<a href="#list-services" class="btn btn__2">Услуги</a>
 				</div>
 			</div>
 		</section>
@@ -92,7 +92,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-adventure">
+			<section id="section-adventure" class="section-adventure">
 				<div class="container adventure__container">
 					<div class="row">
 						<div class="col-1-of-4">
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="list-services">
+			<section id="list-services" class="list-services">
 				<div class="list">
 					<h2 class="list__title">Список услуг:</h2>
 					<ul class="list__list">
@@ -227,10 +227,10 @@
 							</div>
 							<div class="form__group">
 								<input
-									type="email"
+									type="text"
 									class="form__input"
-									placeholder="Ваш email"
-									id="email"
+									placeholder="Интересующий товар"
+									id="product"
 								/>
 							</div>
 							<div class="form__group form__group_last">
@@ -265,4 +265,48 @@
 			</div>
 		</footer>
 	</body>
+	<script>
+		// Вставьте токен бота и ID чата
+		const TOKEN = '7757102199:AAF5riyAWlhtexBo9_AHRQP3uUbqulU_E0o'
+		const CHAT_ID = '-1002420002525'
+		const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+
+		document.querySelector('.form').addEventListener('submit', async e => {
+			e.preventDefault()
+
+			// Получение данных из формы
+			const name = document.getElementById('name').value
+			const product = document.getElementById('product').value
+			const phone = document.getElementById('phone').value
+
+			// Формирование сообщения
+			const message = `
+			Новая заявка:
+			👤 Имя: ${name}
+			📦 Товар: ${product}
+			📞 Телефон: ${phone}
+			`
+
+			// Отправка сообщения в Telegram
+			try {
+				const response = await fetch(URL, {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({
+						chat_id: CHAT_ID,
+						text: message,
+					}),
+				})
+
+				if (response.ok) {
+					console.log('Данные успешно отправлены!')
+				} else {
+					console.log('Ошибка отправки данных!')
+				}
+			} catch (error) {
+				console.error('Ошибка:', error)
+				console.log('Не удалось отправить данные.')
+			}
+		})
+	</script>
 </html>
