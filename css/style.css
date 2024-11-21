@@ -656,6 +656,7 @@ body {
 	-webkit-transform: skewY(-3deg);
 	-ms-transform: skewY(-3deg);
 	transform: skewY(-3deg);
+	overflow: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
