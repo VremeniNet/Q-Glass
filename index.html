@@ -303,6 +303,7 @@
 
 				if (response.ok) {
 					console.log('Данные успешно отправлены!')
+					document.querySelector('.form').reset()
 				} else {
 					console.log('Ошибка отправки данных!')
 				}
