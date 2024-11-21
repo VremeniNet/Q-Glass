@@ -653,9 +653,7 @@ body {
 	margin-top: 10rem;
 	padding: 15rem 0;
 	background: url(../img/header.jpg) center/cover no-repeat;
-	-webkit-transform: skewY(-3deg);
-	-ms-transform: skewY(-3deg);
-	transform: skewY(-3deg);
+	-webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
